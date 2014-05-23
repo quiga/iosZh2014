@@ -22,6 +22,8 @@
 		BF8CE472192F222000E22DD6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF8CE451192F222000E22DD6 /* UIKit.framework */; };
 		BF8CE47A192F222000E22DD6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BF8CE478192F222000E22DD6 /* InfoPlist.strings */; };
 		BF8CE47C192F222000E22DD6 /* iosZH2014Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8CE47B192F222000E22DD6 /* iosZH2014Tests.m */; };
+		BF8CE486192F2A1000E22DD6 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF8CE485192F2A1000E22DD6 /* MapKit.framework */; };
+		BF8CE489192F2B0100E22DD6 /* QGPin.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8CE488192F2B0100E22DD6 /* QGPin.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,9 @@
 		BF8CE477192F222000E22DD6 /* iosZH2014Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iosZH2014Tests-Info.plist"; sourceTree = "<group>"; };
 		BF8CE479192F222000E22DD6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BF8CE47B192F222000E22DD6 /* iosZH2014Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iosZH2014Tests.m; sourceTree = "<group>"; };
+		BF8CE485192F2A1000E22DD6 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		BF8CE487192F2B0100E22DD6 /* QGPin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QGPin.h; sourceTree = "<group>"; };
+		BF8CE488192F2B0100E22DD6 /* QGPin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QGPin.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF8CE486192F2A1000E22DD6 /* MapKit.framework in Frameworks */,
 				BF8CE450192F222000E22DD6 /* CoreGraphics.framework in Frameworks */,
 				BF8CE452192F222000E22DD6 /* UIKit.framework in Frameworks */,
 				BF8CE44E192F222000E22DD6 /* Foundation.framework in Frameworks */,
@@ -104,6 +110,7 @@
 		BF8CE44C192F222000E22DD6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BF8CE485192F2A1000E22DD6 /* MapKit.framework */,
 				BF8CE44D192F222000E22DD6 /* Foundation.framework */,
 				BF8CE44F192F222000E22DD6 /* CoreGraphics.framework */,
 				BF8CE451192F222000E22DD6 /* UIKit.framework */,
@@ -124,6 +131,8 @@
 				BF8CE466192F222000E22DD6 /* QGSecondViewController.m */,
 				BF8CE468192F222000E22DD6 /* Images.xcassets */,
 				BF8CE454192F222000E22DD6 /* Supporting Files */,
+				BF8CE487192F2B0100E22DD6 /* QGPin.h */,
+				BF8CE488192F2B0100E22DD6 /* QGPin.m */,
 			);
 			path = iosZH2014;
 			sourceTree = "<group>";
@@ -258,6 +267,7 @@
 				BF8CE464192F222000E22DD6 /* QGFirstViewController.m in Sources */,
 				BF8CE45E192F222000E22DD6 /* QGAppDelegate.m in Sources */,
 				BF8CE467192F222000E22DD6 /* QGSecondViewController.m in Sources */,
+				BF8CE489192F2B0100E22DD6 /* QGPin.m in Sources */,
 				BF8CE45A192F222000E22DD6 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -467,6 +477,7 @@
 				BF8CE481192F222000E22DD6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BF8CE482192F222000E22DD6 /* Build configuration list for PBXNativeTarget "iosZH2014Tests" */ = {
 			isa = XCConfigurationList;
@@ -475,6 +486,7 @@
 				BF8CE484192F222000E22DD6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
