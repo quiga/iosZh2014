@@ -19,10 +19,10 @@
 {
     [super viewDidLoad];
     [self.mapView setDelegate:self];
-    self.mapView.mapType = MKMapTypeHybrid;
+    self.mapView.mapType = MKMapTypeSatellite;
     
-    float spanX = 0.00001;
-    float spanY = 0.00001;
+    float spanX = 0.001;
+    float spanY = 0.001;
     MKCoordinateRegion region;
     
     region.center.longitude = 19.079752;
@@ -38,10 +38,9 @@
     point.coordinate = coordinate1;
     point.title = @"Pázmány Péter Katolikus Egyetem";
     point.subtitle = @"ITK";
-    
+
     [self.mapView addAnnotation:point];
     [self.mapView setRegion:region animated:YES];
-    
 }
 
 - (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id)annotation {

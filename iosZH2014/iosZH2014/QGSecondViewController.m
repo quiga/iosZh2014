@@ -13,9 +13,6 @@
 
 @interface QGSecondViewController ()
 @property (strong, nonatomic) NSMutableData *data;
-@property (strong, nonatomic) NSMutableDictionary *adatok;
-
-
 @end
 
 @implementation QGSecondViewController
@@ -63,16 +60,17 @@
         } else {
            
             NSError *e = nil;
-            self.adatok = [NSJSONSerialization JSONObjectWithData: data options: NSJSONReadingMutableContainers error: &e];
-            NSLog(@"%@", self.adatok);
+            NSMutableDictionary *adatok = [NSJSONSerialization JSONObjectWithData: data options: NSJSONReadingMutableContainers error: &e];
+            NSLog(@"%@", adatok);
             
-            if (!self.adatok) {
+            if (!adatok) {
                 NSLog(@"Error parsing JSON: %@", e);
             } else {
-                for(NSDictionary *album in [self.adatok objectForKey:@"albums"]) {
+                for(NSDictionary *album in [adatok objectForKey:@"albums"]) {
                     NSLog(@"Item: %@", [album objectForKey: @"albumName"]);
+                    
+                   // Albums *al = [[Albums alloc] init];
                     /*
-                    Albums *al = [[Albums alloc] init];
                     al.id = [album objectForKey: @"albumId"];
                     al.name = [album objectForKey: @"albumName"];
                     NSLog(@"%@", al);

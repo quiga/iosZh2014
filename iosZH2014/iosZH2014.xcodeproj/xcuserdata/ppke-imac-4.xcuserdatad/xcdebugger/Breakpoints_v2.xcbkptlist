@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "iosZH2014/QGFirstViewController.m"
-            timestampString = "422528901.067423"
+            timestampString = "422531921.693037"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "29"
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "iosZH2014/QGSecondViewController.m"
-            timestampString = "422529826.760314"
+            timestampString = "422531289.979556"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "66"
-            endingLineNumber = "66"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
             landmarkName = "-downloadWithBlocks"
             landmarkType = "5">
          </BreakpointContent>
