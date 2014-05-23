@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreData/CoreData.h>
 
-@interface QGSecondViewController : UIViewController
+#define jsonFile @"http://wsn.itk.ppke.hu/~jozcsma/albums.txt"
+
+@interface QGSecondViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource>
 
 @end

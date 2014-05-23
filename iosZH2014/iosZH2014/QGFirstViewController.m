@@ -7,7 +7,6 @@
 //
 
 #import "QGFirstViewController.h"
-#import "QGPin.h"
 
 @interface QGFirstViewController ()
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;

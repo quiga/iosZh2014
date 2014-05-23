@@ -23,7 +23,10 @@
 		BF8CE47A192F222000E22DD6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BF8CE478192F222000E22DD6 /* InfoPlist.strings */; };
 		BF8CE47C192F222000E22DD6 /* iosZH2014Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8CE47B192F222000E22DD6 /* iosZH2014Tests.m */; };
 		BF8CE486192F2A1000E22DD6 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF8CE485192F2A1000E22DD6 /* MapKit.framework */; };
-		BF8CE489192F2B0100E22DD6 /* QGPin.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8CE488192F2B0100E22DD6 /* QGPin.m */; };
+		BF8CE48B192F3F0100E22DD6 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF8CE48A192F3F0100E22DD6 /* CoreData.framework */; };
+		BF8CE48E192F3F2000E22DD6 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BF8CE48C192F3F2000E22DD6 /* Model.xcdatamodeld */; };
+		BF8CE4A0192F4AE600E22DD6 /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8CE49F192F4AE600E22DD6 /* Photo.m */; };
+		BF8CE4A3192F4AE700E22DD6 /* Albums.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8CE4A2192F4AE700E22DD6 /* Albums.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,8 +62,12 @@
 		BF8CE479192F222000E22DD6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BF8CE47B192F222000E22DD6 /* iosZH2014Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iosZH2014Tests.m; sourceTree = "<group>"; };
 		BF8CE485192F2A1000E22DD6 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		BF8CE487192F2B0100E22DD6 /* QGPin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QGPin.h; sourceTree = "<group>"; };
-		BF8CE488192F2B0100E22DD6 /* QGPin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QGPin.m; sourceTree = "<group>"; };
+		BF8CE48A192F3F0100E22DD6 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		BF8CE48D192F3F2000E22DD6 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		BF8CE49E192F4AE600E22DD6 /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photo.h; sourceTree = "<group>"; };
+		BF8CE49F192F4AE600E22DD6 /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
+		BF8CE4A1192F4AE700E22DD6 /* Albums.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Albums.h; sourceTree = "<group>"; };
+		BF8CE4A2192F4AE700E22DD6 /* Albums.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Albums.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF8CE48B192F3F0100E22DD6 /* CoreData.framework in Frameworks */,
 				BF8CE486192F2A1000E22DD6 /* MapKit.framework in Frameworks */,
 				BF8CE450192F222000E22DD6 /* CoreGraphics.framework in Frameworks */,
 				BF8CE452192F222000E22DD6 /* UIKit.framework in Frameworks */,
@@ -91,6 +99,11 @@
 		BF8CE441192F222000E22DD6 = {
 			isa = PBXGroup;
 			children = (
+				BF8CE48C192F3F2000E22DD6 /* Model.xcdatamodeld */,
+				BF8CE4A1192F4AE700E22DD6 /* Albums.h */,
+				BF8CE4A2192F4AE700E22DD6 /* Albums.m */,
+				BF8CE49E192F4AE600E22DD6 /* Photo.h */,
+				BF8CE49F192F4AE600E22DD6 /* Photo.m */,
 				BF8CE453192F222000E22DD6 /* iosZH2014 */,
 				BF8CE475192F222000E22DD6 /* iosZH2014Tests */,
 				BF8CE44C192F222000E22DD6 /* Frameworks */,
@@ -110,6 +123,7 @@
 		BF8CE44C192F222000E22DD6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BF8CE48A192F3F0100E22DD6 /* CoreData.framework */,
 				BF8CE485192F2A1000E22DD6 /* MapKit.framework */,
 				BF8CE44D192F222000E22DD6 /* Foundation.framework */,
 				BF8CE44F192F222000E22DD6 /* CoreGraphics.framework */,
@@ -131,8 +145,6 @@
 				BF8CE466192F222000E22DD6 /* QGSecondViewController.m */,
 				BF8CE468192F222000E22DD6 /* Images.xcassets */,
 				BF8CE454192F222000E22DD6 /* Supporting Files */,
-				BF8CE487192F2B0100E22DD6 /* QGPin.h */,
-				BF8CE488192F2B0100E22DD6 /* QGPin.m */,
 			);
 			path = iosZH2014;
 			sourceTree = "<group>";
@@ -264,11 +276,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF8CE4A3192F4AE700E22DD6 /* Albums.m in Sources */,
+				BF8CE4A0192F4AE600E22DD6 /* Photo.m in Sources */,
 				BF8CE464192F222000E22DD6 /* QGFirstViewController.m in Sources */,
 				BF8CE45E192F222000E22DD6 /* QGAppDelegate.m in Sources */,
 				BF8CE467192F222000E22DD6 /* QGSecondViewController.m in Sources */,
-				BF8CE489192F2B0100E22DD6 /* QGPin.m in Sources */,
 				BF8CE45A192F222000E22DD6 /* main.m in Sources */,
+				BF8CE48E192F3F2000E22DD6 /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,6 +503,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BF8CE48C192F3F2000E22DD6 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BF8CE48D192F3F2000E22DD6 /* Model.xcdatamodel */,
+			);
+			currentVersion = BF8CE48D192F3F2000E22DD6 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = BF8CE442192F222000E22DD6 /* Project object */;
 }
